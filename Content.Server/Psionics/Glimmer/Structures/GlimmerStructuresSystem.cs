@@ -58,8 +58,10 @@ namespace Content.Server.Psionics.Glimmer
             base.Update(frameTime);
             foreach (var source in EntityQuery<GlimmerSourceComponent>())
             {
-                if (!_powerReceiverSystem.IsPowered(source.Owner)
-                    || !source.Active)
+                if (!_powerReceiverSystem.IsPowered(source.Owner))
+                    continue;
+
+                if (!source.Active)
                     continue;
 
                 source.Accumulator += frameTime;
@@ -68,9 +70,13 @@ namespace Content.Server.Psionics.Glimmer
                 {
                     source.Accumulator -= source.SecondsPerGlimmer;
                     if (source.AddToGlimmer)
+                    {
                         _glimmerSystem.Glimmer++;
+                    }
                     else
+                    {
                         _glimmerSystem.Glimmer--;
+                    }
                 }
             }
         }
