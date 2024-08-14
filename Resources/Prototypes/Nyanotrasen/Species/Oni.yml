@@ -5,7 +5,7 @@
   prototype: MobOni
   dollPrototype: MobOniDummy
   markingLimits: MobOniMarkingLimits
-  sprites: MobHumanSprites
+  sprites: MobOniSprites
   skinColoration: Hues
   maleFirstNames: names_oni_male
   femaleFirstNames: names_oni_female
@@ -17,6 +17,27 @@
   minWidth: 0.85
   defaultWidth: 1.2
   maxWidth: 1.35
+
+- type: speciesBaseSprites
+  id: MobOniSprites
+  sprites:
+    Head: MobOniHead
+    Hair: MobHumanoidAnyMarking
+    FacialHair: MobHumanoidAnyMarking
+    Snout: MobHumanoidAnyMarking
+    Chest: MobOniTorso
+    Eyes: MobHumanoidEyes
+    LArm: MobOniLArm
+    RArm: MobOniRArm
+    LHand: MobOniLHand
+    RHand: MobOniRHand
+    LLeg: MobOniLLeg
+    RLeg: MobOniRLeg
+    LFoot: MobOniLFoot
+    RFoot: MobOniRFoot
+    Tail: MobHumanoidAnyMarking
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
 
 - type: markingPoints
   id: MobOniMarkingLimits
@@ -47,3 +68,87 @@
     Arms:
       points: 6
       required: false
+
+- type: humanoidBaseSprite
+  id: MobOniHead
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobOniHeadMale
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobOniHeadFemale
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobOniTorso
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobOniTorsoMale
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobOniTorsoFemale
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobOniLLeg
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobOniLArm
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobOniLHand
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobOniLFoot
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobOniRLeg
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobOniRArm
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobOniRHand
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobOniRFoot
+  baseSprite:
+    sprite: Mobs/Species/Oni/parts.rsi
+    state: r_foot
