@@ -55,7 +55,7 @@ public sealed partial class PsionicPowerPrototype : IPrototype
     ///     What color will the initialization feedback display in the chat window with.
     /// </summary>
     [DataField]
-    public string InitializationFeedbackColor = "#8A00C2";
+    public string InitializationFeedbackColor = "#A000C8";
 
     /// <summary>
     ///     What font size will the initialization message use in chat.
