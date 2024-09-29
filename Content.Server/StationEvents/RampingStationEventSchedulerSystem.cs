@@ -63,7 +63,7 @@ public sealed class RampingStationEventSchedulerSystem : GameRuleSystem<RampingS
             }
 
             PickNextEventTime(uid, scheduler);
-            _event.RunRandomEvent();
+            _event.PickRandomEvent();
         }
     }
 

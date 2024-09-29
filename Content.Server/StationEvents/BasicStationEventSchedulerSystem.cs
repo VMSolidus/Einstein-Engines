@@ -51,7 +51,7 @@ namespace Content.Server.StationEvents
                     return;
                 }
 
-                _event.RunRandomEvent();
+                _event.PickRandomEvent();
                 ResetTimer(eventScheduler);
             }
         }
