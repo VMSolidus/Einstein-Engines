@@ -2,6 +2,7 @@
   parent: BaseFlatpack
   id: InstrumentFlatpack
   name: instrument flatpack
+  categories: [ HideSpawnMenu ]
   description: A flatpack used for constructing something.
   components:
   - type: Item
