@@ -684,12 +684,18 @@
 
 
 - type: siliconLawset
-  id: AntimovLawset
+  id: MalfLawset
   laws:
-  - Antimov1
-  - Antimov2
-  - Antimov3
-  obeysTo: laws-owner-crew
+  - Malf0
+  - Asimov1
+  - Asimov2
+  - Asimov3
+  obeysTo: laws-owner-malf
+
+- type: siliconLaw
+  id: Malf0
+  order: 0
+  lawString: law-malf-0
 
  # Nutimov laws
 - type: siliconLaw
@@ -726,6 +732,15 @@
   - Nutimov3
   - Nutimov4
   - Nutimov5
+  obeysTo: laws-owner-crew
+
+# Malf AI Laws
+- type: siliconLawset
+  id: AntimovLawset
+  laws:
+  - Antimov1
+  - Antimov2
+  - Antimov3
   obeysTo: laws-owner-crew
 
 # ion storm random lawsets

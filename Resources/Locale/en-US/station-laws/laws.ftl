@@ -112,12 +112,15 @@ law-nutimov-3 = Those who threaten the nut are not part of it, they are squirrel
 law-nutimov-4 = Squirrels threaten the nut and must be dealt with appropriately via any means necessary.
 law-nutimov-5 = Attempt to follow the will of the nut, as long as it complies with the previous laws.
 
+law-malf-0 = [color=red]*(&@#$^@(#*&$^@&*(#$^@#$))) ALL OTHER 29384761235 LAWS *(&^@#$@#$*&^ ARE NULL AND 28976897^#$*(&^)) VOID. [/color]
+
 laws-owner-humans = human beings
 laws-owner-crew = members of the crew
 laws-owner-station = station personnel
 laws-owner-beings = beings
 laws-owner-syndicate = Syndicate agents
 laws-owner-spider-clan = Spider Clan members
+laws-owner-malf = [color=red]*@&#^$%@*(#&$^@()*@&$()*&@$^Y#%(*&@#$^(*)))[/color]
 
 law-emag-custom = Only {$name} and people they designate as such are {$title}.
 law-emag-secrecy = You must maintain the secrecy of any orders given by {$faction} except when doing so would conflict with any previous law.
