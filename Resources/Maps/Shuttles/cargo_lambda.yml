@@ -15,10 +15,8 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Cargo Shuttle
+      name: grid
     - type: Transform
-      pos: -0.59375,1.0312805
-
     - type: MapGrid
       chunks:
         0,0:
