@@ -226,6 +226,9 @@ namespace Content.Server.Chat.Managers
                 case OOCChatType.Admin:
                     SendAdminChat(player, message);
                     break;
+                case OOCChatType.Antag:
+                    SendAntagChat(player, message);
+                    break;
             }
         }
 
@@ -254,7 +257,7 @@ namespace Content.Server.Chat.Managers
                 var prefs = _preferencesManager.GetPreferences(player.UserId);
                 colorOverride = prefs.AdminOOCColor;
             }
-            if (  _netConfigManager.GetClientCVar(player.Channel, CCVars.ShowOocPatronColor) && player.Channel.UserData.PatronTier is { } patron && PatronOocColors.TryGetValue(patron, out var patronColor))
+            if (_netConfigManager.GetClientCVar(player.Channel, CCVars.ShowOocPatronColor) && player.Channel.UserData.PatronTier is { } patron && PatronOocColors.TryGetValue(patron, out var patronColor))
             {
                 wrappedMessage = Loc.GetString("chat-manager-send-ooc-patron-wrap-message", ("patronColor", patronColor),("playerName", player.Name), ("message", FormattedMessage.EscapeText(message)));
             }
@@ -293,6 +296,11 @@ namespace Content.Server.Chat.Managers
             }
 
             _adminLogger.Add(LogType.Chat, $"Admin chat from {player:Player}: {message}");
+        }
+
+        private void SendAntagChat(ICommonSession player, string message)
+        {
+
         }
 
         #endregion
@@ -401,6 +409,7 @@ namespace Content.Server.Chat.Managers
     public enum OOCChatType : byte
     {
         OOC,
-        Admin
+        Admin,
+        Antag
     }
 }
